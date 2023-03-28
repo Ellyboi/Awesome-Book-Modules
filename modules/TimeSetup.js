@@ -1,14 +1,8 @@
-import { DateTime } from './luxon.js';
+import Navigation from './modules/Navigation.js';
+import './modules/Bookset.js';
+import getTime from './modules/TimeSetup.js';
 
-const getTime = () => {
-  const dateTime = document.querySelector('#date');
-  if (!dateTime.innerText) {
-    setInterval(() => {
-      dateTime.innerText = DateTime.now().toLocaleString(
-        DateTime.DATETIME_MED_WITH_SECONDS,
-      );
-    }, 1000);
-  }
-};
-
-export default getTime;
+document.addEventListener('DOMContentLoaded', () => {
+  Navigation();
+  getTime();
+});

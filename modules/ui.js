@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Storage from './storage.js';
 /* Class UI : Handles UI Tasks */
 class UItask {
@@ -35,4 +34,4 @@ class UItask {
   }
 }
 
-export default UItask; 
+export default UItask;

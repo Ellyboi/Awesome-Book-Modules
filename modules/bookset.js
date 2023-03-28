@@ -113,4 +113,4 @@ document.querySelector('#container-book-list').addEventListener('click', (e) => 
   UI.hideOrRemoveFieldet();
 });
 
-export default bookset.js;
+export default Book;

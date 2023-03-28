@@ -1,4 +1,4 @@
-const navigation = () => {
+const Navigation = () => {
   document.querySelector('#book-list-menu').addEventListener('click', () => {
     document.querySelector('.books-container').classList.remove('hide');
     document.querySelector('.form').classList.add('hide');
@@ -18,4 +18,4 @@ const navigation = () => {
   });
 };
 
-export default navigation;
+export default Navigation;

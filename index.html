@@ -14,78 +14,61 @@
     <title> Awesome Books </title>
   </head>
   <body>
-    <section class="nav-bar-container">
-      <div class="nav-bar">
-        <div class="main-logo">
-          <a href="#"><h3>Awesome Books</h3></a>
-        </div>
-        <nav class="menus">
-          <ul>
-            <li>
-              <a href="#" id="book-list-menu"> List </a>
-            </li>
-            <li>
-              <span class="vertical-line"></span>
-            </li>
-            <li>
-              <a href="#" id="add-new-book-menu"> Add new </a>
-            </li>
-            <li>
-              <span class="vertical-line"></span>
-            </li>
-            <li>
-              <a href="#" id="contact-menu"> Contact </a>
-            </li>
-          </ul>
-        </nav>
+    <header>
+      <h1 class="title">Awesome Books</h1>
+      <nav>
+        <ul>
+          <li class="nav-list"><button class="nav-btn active" type="button" id="btn-list">List</button></li>
+          <li class="nav-list">|</li>
+          <li class="nav-list"><button class="nav-btn" type="button" id="btn-add">Add New</button></li>
+          <li class="nav-list">|</li>
+          <li class="nav-list"><button class="nav-btn" type="button" id="btn-contact">Contact</button></li>
+          <li class="nav-list last-nav-list">|</li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- Date -->
+    <div class="date" id="date"></div>
+    <!-- List -->
+    <main id="books-container">
+      <div class="book-list-container">
+        <h2 class="subtitle">List of Awesome Book</h2>
+        <!-- Book List (JS) -->
+        <div class="book-list" id="book-list"></div>
       </div>
-    </section>
-
-    <div class="date-container">
-      <p id="date"></p>
-    </div>  
-
-    <section class="books-container">
-      <h1 class="first-title"> List Awesome Books </h1>
-      <fieldset class="hide" id="fieldset">
-        <div class="container-book-list" id="container-book-list">
-          <div class="load-books-table"> </div>
-        </div>
-      </fieldset>
-    </section>
-	
-    <center><div class="line" ></div></center>
-	
-    <form class="form hide" id="form">
-      <h1 class="add-new-book-title"> Add a new book </h1>
+    </main>
+  
+    
+    <!-- Add a Book -->
+    <div class="form-container">
+      <h2 class="subtitle">Add a Book</h2>
+      <form id="add-form">
+        <input type="text" required placeholder="Title" id="title">
+        <input type="text" required placeholder="Author" id="author">
+        <button id="add-btn" type="submit">Add New Book</button>
+      </form>
+    </div>
+  
+    <!-- Contact Info  -->
+    <section id="contact-me">
       <div>
-        <input class="book-title-input" type="text" id="title" placeholder="Title" required />
+        <h2 class="subtitle">Contact Information</h2>
+        <p class="contact-info">Do you have any questions ?</p>
+        <p class="contact-info">You can reach out to me!</p>
+        <ul class="contact-list">
+          <li class="contact-item">Our Email: vitoesitemitope@gmail.com</li>
+          <li class="contact-item">Our Phone #: +2348030690701</li>
+          <li class="contact-item">Our address: Elepe, Ikorodu, Lagos, Nigeria</li>
+        </ul>
       </div>
-      <div>
-        <input class="book-author-input" type="text" id="author" placeholder="Author" required />
-      </div>
-      <button class="add-book-button" type="submit"> Add </button>
-    </form>
-
-    <section class="section-contact-info hide">
-      <h1 class="contact-title"> Contact information </h1>
-      <p class="first-description-contact">
-        Do you have any questions or you just want to say "Hello"?
-      </p>
-      <p class="first-description-contact"> You can reach out to us! </p>
-      <ul class="contact-list">
-        <li> Our email: vitoesielijah@gmail.com </li>
-        <li> Our phone number:12345678 </li>
-        <li> Our address: tomson 48, 321 Lagos City, Nigeria </li>
-      </ul>
     </section>
-
+  
+    <!-- Footer -->
     <footer>
-      <div class="text-footer-container">
-        <div class="text-copyright"> Copyright @ 2023 Tessy Rights Reserved. </div>
-      </div>
+      <div class="footer-copyright">Copyright ©️ 2023 Vitoesi Elijah</div>
     </footer>
-
-    <script type="module" src="./index.js"></script>
+  
+    <script src="index.js" type="module"></script>
   </body>
 </html>

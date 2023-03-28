@@ -27,10 +27,6 @@ header h1 {
   color: #1004b8;
 }
 
-.subtitle {
-  color: #1004b8;
-}
-
 ul {
   display: flex;
   flex-direction: row;
@@ -81,6 +77,7 @@ ul {
   margin-top: 6%;
   margin-bottom: 6%;
   font-size: 3em;
+  color: #1004b8;
 }
 
 .book-list {

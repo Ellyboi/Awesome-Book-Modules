@@ -1,3 +1,4 @@
+/* eslint max-classes-per-file: ["error", 3] */
 import navigation from './modules/navigation.js';
 import './modules/bookset.js';
 import getTime from './modules/timeSetup.js';

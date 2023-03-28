@@ -33,5 +33,4 @@ class UItask {
     document.getElementById('author').value = '';
   }
 }
-
 export default UItask; 

@@ -188,7 +188,7 @@ If you like this project, let us know, please!
 
 ## 📝 License <a name="license"></a>
 
-This project is <a href="./LICENSE.md"> MIT </a>
+This project is <a href="https://github.com/Ellyboi/Awesome-Book-Modules/blob/feature-branch/LICENSE"> MIT </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
